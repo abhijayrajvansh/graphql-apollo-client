@@ -1,9 +1,8 @@
 import { gql } from "@apollo/client";
 
-export const getContinentsName = gql`
-  query Continents {
-    continents {
-      name
-    }
+export const generateGoogleSignedInToken = gql `
+  query Query($token: String!) {
+    verifyGoogleToken(token: $token)
   }
 `;
+

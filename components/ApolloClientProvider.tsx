@@ -3,8 +3,12 @@
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 
 const ApolloClientProvider = ({ children }: { children: React.ReactNode }) => {
+
+  const SERVER_1 = "https://countries.trevorblades.com/";
+  const SERVER_2 = "http://localhost:8080/graphql"
+
   const client = new ApolloClient({
-    uri: "https://countries.trevorblades.com/",
+    uri: SERVER_2,
     cache: new InMemoryCache(),
   });
 
