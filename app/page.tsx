@@ -1,11 +1,11 @@
+import Home from "@/components/Home";
 import React from "react";
-import GoogleVerificationToken from '@/components/GoogleVerificationToken';
 
 const page = () => {
   return (
     <section className="flex flex-col container items-center mx-auto">
-      <h1 className="font-semibold text-3xl text-center my-5"> graphql client implementation</h1>
-      <GoogleVerificationToken />
+      <h1 className="font-semibold text-3xl text-center my-5"> graphql + typescript client implementation</h1>
+      <Home />
     </section>  
   );
 };
