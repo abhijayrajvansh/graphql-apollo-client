@@ -1,11 +1,13 @@
 'use client';
 
 import React from 'react';
+import gqlClient from '@/app/graphql';
+
 
 const Home = () => {
+
   return (
-    <section>
-      {/* pokemon graphql server https://graphql-pokeapi.graphcdn.app/ */}
+    <section className='bred w-80'>
     </section>
   );
 };
