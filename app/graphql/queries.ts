@@ -1,8 +1,10 @@
-import { gql } from "@apollo/client";
+import { gql } from '@apollo/client';
 
-export const generateGoogleSignedInToken = gql `
-  query Query($token: String!) {
-    verifyGoogleToken(token: $token)
+export const getPokemonByName = gql`
+  query getPokemonByName($name: String!) {
+    pokemon(name: $name) {
+      id
+      name
+    }
   }
 `;
-
